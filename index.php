@@ -1,7 +1,7 @@
 <?php
 
-require_once "vendor/autoload.php";
-require __DIR__ . '/vendor/autoload.php';
+require_once 'vendor/autoload.php';
+
 date_default_timezone_set('Asia/Tashkent');
 
 $update = json_decode(file_get_contents('php://input'));
@@ -14,8 +14,10 @@ if (isset($update)) {
 if (count($_GET) > 0 || count($_POST) > 0) {
     $task = new Task();
 
-    if (isset($_POST['text'])) {
+    if (isset($_POST['text']) ){
         $task->add($_POST['text']);
+        header('Location: index.php');
+        exit();
     }
 
     if (isset($_GET['complete'])) {
@@ -29,4 +31,11 @@ if (count($_GET) > 0 || count($_POST) > 0) {
     if (isset($_GET['delete'])) {
         $task->delete($_GET['delete']);
     }
+    if (isset($_GET['update'])) {
+        $task->update($_GET['update']);
+
+    }
 }
+
+require "view/home.php";
+

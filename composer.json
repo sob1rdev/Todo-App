@@ -1,11 +1,19 @@
 {
-    "require": {
-        "guzzlehttp/guzzle": "^7.9"
-    },
+    "name": "sobirdev/todo-app",
+    "description": "It is Sobirjon's Todo-App",
     "autoload": {
-        "psr-4": {
-            "src\\": "src/"
+        "classmap": [
+            "."
+        ]
+    },
+    "authors": [
+        {
+            "name": "Sobirjon",
+            "email": "20sobirjon05@gmail.com"
         }
+    ],
+    "require": {
+        "ext-pdo": "*",
+        "guzzlehttp/guzzle": "^7.8"
     }
-
 }

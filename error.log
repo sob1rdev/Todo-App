@@ -1,5 +1,0 @@
-[23-Jul-2024 02:08:05 Asia/Tashkent] PHP Warning:  require(view/home.php): Failed to open stream: No such file or directory in /home/sobirjon/My_Projects/Todo_App/index.php on line 76
-[23-Jul-2024 02:08:05 Asia/Tashkent] PHP Fatal error:  Uncaught Error: Failed opening required 'view/home.php' (include_path='.:/usr/share/php') in /home/sobirjon/My_Projects/Todo_App/index.php:76
-Stack trace:
-#0 {main}
-  thrown in /home/sobirjon/My_Projects/Todo_App/index.php on line 76
