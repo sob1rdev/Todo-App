@@ -1,19 +1,20 @@
 {
-    "name": "sobirdev/todo-app",
-    "description": "It is Sobirjon's Todo-App",
+    "name": "sobirjon/todo_app",
     "autoload": {
+        "psr-4": {
+            "Sobirjon\\TodoApp\\": "src/"
+        },
         "classmap": [
             "."
         ]
     },
     "authors": [
         {
-            "name": "Sobirjon",
+            "name": "sob1rdev",
             "email": "20sobirjon05@gmail.com"
         }
     ],
     "require": {
-        "ext-pdo": "*",
-        "guzzlehttp/guzzle": "^7.8"
+        "vlucas/phpdotenv": "^5.6"
     }
 }
